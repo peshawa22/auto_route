@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:practise/routes/app_router.gr.dart';
 @RoutePage()
 class LoginPage extends StatelessWidget {
-   LoginPage({super.key});
-  String name = 'peshawa';
+   const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +16,7 @@ class LoginPage extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: (){
-                context.router.pop(name);
+                context.router.replace(const ProfileRoute());
               },
               child: const Text('Profile page'),
             ),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:practise/routes/app_router.gr.dart';
 @RoutePage()
 class HomePage extends StatelessWidget {
-   HomePage({super.key});
+   const HomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
