@@ -20,6 +20,12 @@ class LoginPage extends StatelessWidget {
               },
               child: const Text('Profile page'),
             ),
+            ElevatedButton(
+              onPressed: (){
+                context.router.pop('matin');
+              },
+              child: const Text(' return'),
+            ),
           ],
         ),
       ),

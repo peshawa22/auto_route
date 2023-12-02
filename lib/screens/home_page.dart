@@ -14,9 +14,15 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
+              onPressed: ()async{
+                var result =await context.router.push<String>(const LoginRoute());
+                result;
+              },
+              child: const Text('login page'),
+            ),
+            ElevatedButton(
               onPressed: (){
-                context.router.push(const LoginRoute(),);
-
+                AutoRouter.of(context).pushNamed('/login');
               },
               child: const Text('login page'),
             ),
